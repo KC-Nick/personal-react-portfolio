@@ -1,7 +1,17 @@
 export default function About() {
   return (
-    <div>
-      <h1>About Page</h1>
+    <div style={{
+      backgroundColor: '#BFCDE0',
+      color: '#3B3355',
+      width: '50%',
+      marginLeft: '25%',
+      border: '2px solid #FEFCFD',
+      padding: '5px',
+      borderRadius: '15px 0px 15px 0px',
+    }}>
+      <h1 style={{
+        fontStyle: 'italic',
+      }}>About Me</h1>
       <p>
         Hello, and welcome to my portfolio. My name is Nick, and throughout these pages, you will find my resume,
         works I've done, and ways to contact me. I hope you like what you see, and I look forward to hearing from you,

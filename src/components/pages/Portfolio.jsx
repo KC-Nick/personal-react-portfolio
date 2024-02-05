@@ -4,7 +4,7 @@ import blog from '../../../public/blog.png';
 import stock4 from '../../../public/stock4.png';
 import kaizen from '../../../public/kaizen.png';
 import weather from '../../../public/weather.png';
-import githubIcon from '../../../public/github-mark.svg';
+import githubIcon from '../../../public/github-mark.png';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import stock1 from '../../../public/stock1.png';
@@ -15,7 +15,14 @@ const ProjectsPage = () => {
   return (
 
     <div>
-      <h1>Projects</h1>
+      <h1 style = {{
+      margin: '10px',
+      marginBottom: '20px',
+      backgroundColor: '#5D5D81',
+      width: 'fit-content',
+      borderRadius: '10px',
+      padding: '5px',
+    }}>Projects</h1>
       <Container style={{ width: "75%" }}>
 
         <Row>
