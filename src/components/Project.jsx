@@ -5,7 +5,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Col from 'react-bootstrap/Col';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Project = ({ title, description, technologies, link, backgroundImage, ariaLabel, children }) => {
+const Project = ({ title, description, technologies, link, hoverBackgroundImage, backgroundImage, ariaLabel, children }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -13,7 +13,7 @@ const Project = ({ title, description, technologies, link, backgroundImage, aria
       <Card style={{
         width: "100%",
         height: isHovered ? "auto" : "250px",
-        backgroundImage: `url(${backgroundImage})`,
+        backgroundImage: `url(${isHovered ? hoverBackgroundImage : backgroundImage})`,
         backgroundSize: "cover",
         margin: "0 auto",
         color: "#BFCDE0",
@@ -54,7 +54,10 @@ const Project = ({ title, description, technologies, link, backgroundImage, aria
                 backgroundColor: "#000505",
                 width: "fit-content",
                 borderRadius: "10px",
-                padding: "5px"
+                padding: "5px",
+                borderColor: "#BFCDE0",
+                borderStyle: "solid",
+                borderWidth: "1px",
               }}>
                 {description}
               </Card.Text>
