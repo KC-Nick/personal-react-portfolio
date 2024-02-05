@@ -11,7 +11,7 @@ const Header = () => {
       borderRadius: '10px',
       padding: '5px',
     }}>
-      <h1>Welcome to My Portfolio</h1>
+      <h1>Welcome to The Portfolio of N. Wilson</h1>
     </header>
   );
 };

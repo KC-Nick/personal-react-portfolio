@@ -1,8 +1,10 @@
 .list-div {
-    border: none !important;
+    border: none;
   }
   
   .list-group {
-    border: none !important;
-    background-color: transparent !important;
+    border: none;
+    background-color: transparent;
+    color: #BFCDE0;
+    font-style: italic;
   }

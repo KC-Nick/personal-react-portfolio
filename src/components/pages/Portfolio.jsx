@@ -30,7 +30,7 @@ const ProjectsPage = () => {
             title="Blog Poster"
             description="Log in, make posts, edit or delete them! Comment on posts!"
             technologies={['MySQL2', 'Sequelize', 'BCrypt', 'Express']}
-            link="https://github.com/KC-Nick/blog-poster"
+            link="https://arcane-hollows-70364-2470ccfb589f.herokuapp.com/"
             backgroundImage={stock1}
             hoverBackgroundImage={blog}
             ariaLabel="An image of a beach with ocean waves. When hovered on, an image with a blog site with a berry theme; the image says Welcome, test to logged in user."

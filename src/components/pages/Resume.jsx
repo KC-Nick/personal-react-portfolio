@@ -12,7 +12,7 @@ export default function Resume() {
                         marginBottom: '20px',
                         backgroundColor: '#5D5D81',
                         borderRadius: '10px',
-                        padding: '5px',
+                        padding: '10px',
                     }} >
                         Resume
                     </h1>
@@ -23,13 +23,14 @@ export default function Resume() {
                                 marginBottom: '20px',
                                 backgroundColor: '#5D5D81',
                                 borderRadius: '10px',
-                                padding: '5px',
-                            }}>
+                                padding: '10px',
+                                width: 'fit-content',
+                            }} >
                                 Skills
                             </h2>
                             <ListGroup className="list-div">
-                                <ListGroup.Item className="list-group">lorem ipsum</ListGroup.Item>
-                                <ListGroup.Item className="list-group">lorem ipsum</ListGroup.Item>
+                                <ListGroup.Item className="list-group">Problem-solving</ListGroup.Item>
+                                <ListGroup.Item className="list-group">SQL & NoSQL</ListGroup.Item>
                             </ListGroup>
                         </Col>
 
@@ -41,12 +42,12 @@ export default function Resume() {
                                 borderRadius: '10px',
                                 padding: '5px',
                                 width: 'fit-content',
-                            }}>
+                            }} >
                                 Experience
                             </h2>
                             <ListGroup className="list-div">
-                                <ListGroup.Item className="list-group">lorem ipsum</ListGroup.Item>
-                                <ListGroup.Item className="list-group">lorem ipsum</ListGroup.Item>
+                                <ListGroup.Item className="list-group">Deli/Bakery — Walmart</ListGroup.Item>
+                                <ListGroup.Item className="list-group">Food Prep/Cashier — Greene Canteen</ListGroup.Item>
                             </ListGroup>
                         </Col>
                     </Row>
@@ -55,13 +56,16 @@ export default function Resume() {
                         <h2 style={{
                             margin: '10px',
                             marginBottom: '20px',
+                            marginLeft: '25%',
                             backgroundColor: '#5D5D81',
                             borderRadius: '10px',
                             padding: '5px',
-                        }}>Education</h2>
+                            width: 'fit-content',
+                        }} >
+                            Education</h2>
                         <ListGroup className="list-div">
-                            <ListGroup.Item className="list-group">lorem ipsum</ListGroup.Item>
-                            <ListGroup.Item className="list-group">lorem ipsum</ListGroup.Item>
+                            <ListGroup.Item className="list-group">High School Diploma — ECoT</ListGroup.Item>
+                            <ListGroup.Item className="list-group">OSU Full-Stack Web Development Bootcamp — To Be Completed.</ListGroup.Item>
                         </ListGroup>
                     </Row>
 
@@ -71,10 +75,11 @@ export default function Resume() {
                         style={{
                             margin: '10px',
                             marginBottom: '20px',
+                            marginLeft: '35%',
                             backgroundColor: '#5D5D81',
                             borderRadius: '10px',
                             padding: '5px',
-                        }}>
+                        }} >
                         View Resume
                     </Button>
                 </Col>
