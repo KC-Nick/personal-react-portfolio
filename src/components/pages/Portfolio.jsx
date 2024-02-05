@@ -33,7 +33,7 @@ const ProjectsPage = () => {
             title="Employee Manager"
             description="A back-end database for managing employees, roles, and departments."
             technologies={['MySQL2', 'Jest', 'Inquirer']}
-            link="https://github.com/KC-Nick/employee-manager"
+            link="https://github.com/KC-Nick/employee-manager/blob/main/README.md"
             backgroundImage={stock4}
             ariaLabel="A placeholder stockphoto depicts a large waterfall flowing over mountains, into a river in the forest below."
           >
@@ -70,7 +70,7 @@ const ProjectsPage = () => {
             </a>
           </Project>
         </Row>
-        
+
       </Container>
     </div>
   );

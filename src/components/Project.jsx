@@ -16,7 +16,8 @@ const Project = ({ title, description, technologies, link, backgroundImage, aria
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
         margin: "0 auto",
-        color: "#BFCDE0"
+        color: "#BFCDE0",
+        borderColor: "#BFCDE0"
       }}
 
         aria-label={ariaLabel} >
@@ -27,7 +28,10 @@ const Project = ({ title, description, technologies, link, backgroundImage, aria
             backgroundColor: "#000505",
             width: "fit-content",
             borderRadius: "10px",
-            padding: "5px"
+            padding: "5px",
+            borderStyle: "solid",
+            borderColor: "#BFCDE0",
+            borderWidth: "1px"
           }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
