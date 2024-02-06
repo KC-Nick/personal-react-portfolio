@@ -1,15 +1,15 @@
 import React from 'react';
 import Project from '../Project';
-import blog from '../../../public/blog.png';
-import stock4 from '../../../public/stock4.png';
-import kaizen from '../../../public/kaizen.png';
-import weather from '../../../public/weather.png';
-import githubIcon from '../../../public/github-mark.png';
+import blog from '../../../assets/img/blog.png';
+import stock4 from '../../../assets/img/stock4.png';
+import kaizen from '../../../assets/img/kaizen.png';
+import weather from '../../../assets/img/weather.png';
+import githubIcon from '../../public/github-mark.png';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import stock1 from '../../../public/stock1.png';
-import stock2 from '../../../public/stock2.png';
-import stock3 from '../../../public/stock3.png';
+import stock1 from '../../../assets/img/stock1.png';
+import stock2 from '../../../assets/img/stock2.png';
+import stock3 from '../../../assets/img/stock3.png';
 
 const ProjectsPage = () => {
   return (

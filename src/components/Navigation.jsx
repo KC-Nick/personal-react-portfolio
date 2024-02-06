@@ -11,6 +11,7 @@ function Navigation({ currentPage, handlePageChange }) {
       position: 'fixed',
       top: 1,
       right: 0,
+      zIndex: '10',
     }}>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" >
