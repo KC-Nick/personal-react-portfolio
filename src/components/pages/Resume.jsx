@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, ListGroup, Button } from 'react-bootstrap';
-import '../../../assets/css/Resume.css';
+import '../../../assets/css/resume.css';
 
 export default function Resume() {
     return (
