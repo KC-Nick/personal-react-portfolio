@@ -30,7 +30,7 @@ export default function Resume() {
                             </h2>
                             <ListGroup className="list-div">
                                 <ListGroup.Item className="list-group">SQL; Sequelize; MySQL </ListGroup.Item>
-                                <ListGroup.Item className="list-group">NoSQL; MongoDB; Mongoose </ListGroup.Item>
+                                <ListGroup.Item className="list-group">NoSQL; MongoDB; Mongoose; jQuery </ListGroup.Item>
                                 <ListGroup.Item className="list-group">Express; Node; Bootstrap</ListGroup.Item>
                                 <ListGroup.Item className="list-group">Tailwind; GraphQL; Jest; Inquirer</ListGroup.Item>
                             </ListGroup>

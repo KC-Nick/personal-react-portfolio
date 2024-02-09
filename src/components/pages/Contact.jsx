@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
+import emailjs from 'emailjs-com';
 
 export default function Contact() {
   const [name, setName] = useState('');
@@ -8,10 +9,19 @@ export default function Contact() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // replace with api
-    console.log('Name:', name);
-    console.log('Email:', email);
-    console.log('Message:', message);
+
+    emailjs.sendForm(import.meta.env.VITE_SERV_ID, 
+      import.meta.env.VITE_TEMP_ID, event.target,
+      { publicKey: import.meta.env.VITE_PUB_ID,})
+      .then((result) => {
+      console.log(result.text);
+    }, (error) => {
+      console.log(error.text);
+    });
+
+    setName('');
+    setEmail('');
+    setMessage('');
   };
 
   return (
@@ -20,18 +30,18 @@ export default function Contact() {
       marginLeft: '40%'
     }}>
       <Form.Group controlId="formName">
-        <Form.Label>Name;</Form.Label>
-        <Form.Control type="text" placeholder="Enter name" value={name} onChange={(e) => setName(e.target.value)} required />
+        <Form.Label>Name</Form.Label>
+        <Form.Control type="text" name="user_name" placeholder="Enter name" value={name} onChange={(e) => setName(e.target.value)} required />
       </Form.Group>
 
       <Form.Group controlId="formEmail">
-        <Form.Label>Email address;</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+        <Form.Label>Email address</Form.Label>
+        <Form.Control type="email" name="user_email" placeholder="Enter email" value={email} onChange={(e) => setEmail(e.target.value)} required />
       </Form.Group>
 
       <Form.Group controlId="formMessage">
-        <Form.Label>Message;</Form.Label>
-        <Form.Control as="textarea" rows={3} value={message} onChange={(e) => setMessage(e.target.value)} required />
+        <Form.Label>Message</Form.Label>
+        <Form.Control as="textarea" rows={3} name="message" value={message} onChange={(e) => setMessage(e.target.value)} required />
       </Form.Group>
 
       <Button variant="primary" type="submit" style={{
