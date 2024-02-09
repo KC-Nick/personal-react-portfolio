@@ -26,11 +26,13 @@ export default function Resume() {
                                 padding: '10px',
                                 width: 'fit-content',
                             }} >
-                                Skills
+                                Technical Skills
                             </h2>
                             <ListGroup className="list-div">
-                                <ListGroup.Item className="list-group">Problem-solving</ListGroup.Item>
-                                <ListGroup.Item className="list-group">SQL & NoSQL</ListGroup.Item>
+                                <ListGroup.Item className="list-group">SQL; Sequelize; MySQL </ListGroup.Item>
+                                <ListGroup.Item className="list-group">NoSQL; MongoDB; Mongoose </ListGroup.Item>
+                                <ListGroup.Item className="list-group">Express; Node; Bootstrap</ListGroup.Item>
+                                <ListGroup.Item className="list-group">Tailwind; GraphQL; Jest; Inquirer</ListGroup.Item>
                             </ListGroup>
                         </Col>
 
@@ -48,6 +50,7 @@ export default function Resume() {
                             <ListGroup className="list-div">
                                 <ListGroup.Item className="list-group">Deli/Bakery — Walmart</ListGroup.Item>
                                 <ListGroup.Item className="list-group">Food Prep/Cashier — Greene Canteen</ListGroup.Item>
+                                <ListGroup.Item className="list-group">Home Health Aide — Customer Support Services</ListGroup.Item>
                             </ListGroup>
                         </Col>
                     </Row>
@@ -65,7 +68,7 @@ export default function Resume() {
                             Education</h2>
                         <ListGroup className="list-div">
                             <ListGroup.Item className="list-group">High School Diploma — ECoT</ListGroup.Item>
-                            <ListGroup.Item className="list-group">OSU Full-Stack Web Development Bootcamp — To Be Completed.</ListGroup.Item>
+                            <ListGroup.Item className="list-group">OSU Full-Stack Web Development Bootcamp — To Be Completed, 2/13.</ListGroup.Item>
                         </ListGroup>
                     </Row>
 
