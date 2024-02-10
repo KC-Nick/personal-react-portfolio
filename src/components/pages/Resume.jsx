@@ -13,8 +13,9 @@ export default function Resume() {
                         backgroundColor: '#5D5D81',
                         borderRadius: '10px',
                         padding: '10px',
+                        width: 'fit-content',
                     }} >
-                        Resume
+                        Find Resume Doc and GitHub below.
                     </h1>
                     <Row>
                         <Col md={6}>
@@ -103,6 +104,19 @@ export default function Resume() {
                             padding: '5px',
                         }} >
                         View Resume
+                    </Button>
+                    <Button variant="primary"
+                        href="https://github.com/KC-Nick/"
+                        target="_blank"
+                        style={{
+                            margin: '10px',
+                            marginBottom: '20px',
+                            marginLeft: '1%',
+                            backgroundColor: '#5D5D81',
+                            borderRadius: '10px',
+                            padding: '5px',
+                        }} >
+                        View GitHub
                     </Button>
                 </Col>
             </Row>
