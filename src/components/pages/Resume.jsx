@@ -45,6 +45,26 @@ export default function Resume() {
                                 padding: '5px',
                                 width: 'fit-content',
                             }} >
+                                Job Skills
+                            </h2>
+                            <ListGroup className="list-div">
+                                <ListGroup.Item className="list-group">Problem Solving; Team Work; Independence</ListGroup.Item>
+                                <ListGroup.Item className="list-group">Punctuality; Cleanliness; Organization </ListGroup.Item>
+                                <ListGroup.Item className="list-group">Initiative; Reliable; Friendly</ListGroup.Item>
+                            </ListGroup>
+                        </Col>
+                    </Row>
+
+                    <Row>
+                        <Col md={6}>
+                            <h2 style={{
+                                margin: '10px',
+                                marginBottom: '20px',
+                                backgroundColor: '#5D5D81',
+                                borderRadius: '10px',
+                                padding: '5px',
+                                width: 'fit-content',
+                            }} >
                                 Experience
                             </h2>
                             <ListGroup className="list-div">
@@ -53,9 +73,6 @@ export default function Resume() {
                                 <ListGroup.Item className="list-group">Home Health Aide — Customer Support Services</ListGroup.Item>
                             </ListGroup>
                         </Col>
-                    </Row>
-
-                    <Row>
                         <h2 style={{
                             margin: '10px',
                             marginBottom: '20px',
