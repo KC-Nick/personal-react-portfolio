@@ -10,14 +10,15 @@ export default function Contact() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    emailjs.sendForm(import.meta.env.VITE_SERV_ID, 
+    emailjs.sendForm(import.meta.env.VITE_SERV_ID,
       import.meta.env.VITE_TEMP_ID, event.target,
-      { publicKey: import.meta.env.VITE_PUB_ID,})
+      { publicKey: import.meta.env.VITE_PUB_ID, })
       .then((result) => {
-      console.log(result.text);
-    }, (error) => {
-      console.log(error.text);
-    });
+        console.log(result.text);
+        alert('Email sent successfully');
+      }, (error) => {
+        console.log(error.text);
+      });
 
     setName('');
     setEmail('');

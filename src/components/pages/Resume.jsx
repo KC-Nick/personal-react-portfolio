@@ -73,20 +73,22 @@ export default function Resume() {
                                 <ListGroup.Item className="list-group">Home Health Aide — Customer Support Services</ListGroup.Item>
                             </ListGroup>
                         </Col>
-                        <h2 style={{
-                            margin: '10px',
-                            marginBottom: '20px',
-                            marginLeft: '25%',
-                            backgroundColor: '#5D5D81',
-                            borderRadius: '10px',
-                            padding: '5px',
-                            width: 'fit-content',
-                        }} >
-                            Education</h2>
-                        <ListGroup className="list-div">
-                            <ListGroup.Item className="list-group">High School Diploma — ECoT</ListGroup.Item>
-                            <ListGroup.Item className="list-group">OSU Full-Stack Web Development Bootcamp — To Be Completed, 2/13.</ListGroup.Item>
-                        </ListGroup>
+                        <Col>
+                            <h2 style={{
+                                margin: '10px',
+                                marginBottom: '20px',
+                                marginLeft: '25%',
+                                backgroundColor: '#5D5D81',
+                                borderRadius: '10px',
+                                padding: '5px',
+                                width: 'fit-content',
+                            }} >
+                                Education</h2>
+                            <ListGroup className="list-div">
+                                <ListGroup.Item className="list-group">High School Diploma — ECoT</ListGroup.Item>
+                                <ListGroup.Item className="list-group">OSU Full-Stack Web Development Bootcamp — To Be Completed, 2/13.</ListGroup.Item>
+                            </ListGroup>
+                        </Col>
                     </Row>
 
                     <Button variant="primary"
